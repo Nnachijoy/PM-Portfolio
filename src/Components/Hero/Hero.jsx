@@ -68,6 +68,12 @@ function Hero() {
                 </li>
                 </ul>
 
+                <ul>
+              <li>
+                <a onClick={()=>setNavIsOpened(false)} href="#journey">The Journey</a>
+                </li>
+                </ul>
+
             <ul>
               <li>
                 <a onClick={()=>setNavIsOpened(false)} href="#contact">Contact Me</a>
