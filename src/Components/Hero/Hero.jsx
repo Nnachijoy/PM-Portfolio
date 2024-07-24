@@ -88,7 +88,7 @@ function Hero() {
 
             <ul>
              <li>
-                <a download href={resume} onClick={()=>setNavIsOpened(false)}>Resume</a> 
+                <a download href={resume} onClick={()=>setNavIsOpened(false)} className="bg-white text-primary">Download Resume</a> 
                 </li> 
                 </ul>
         </nav>
