@@ -1,22 +1,21 @@
-.stack{
+.stack {
     background-color: var(--techStackBgColor);
     padding: 4rem 0;
-}
-
-.stack-inner{
-    width:90vw;
+  }
+  
+  .stack-inner {
+    width: 90vw;
     max-width: var(--laptop);
     margin: auto;
-    
-}
-
-.stack-inner > h1{
+  }
+  
+  .stack-inner > h1 {
     font-family: clashGrotesk;
     font-size: 2rem;
     margin: 0 0 2rem 0;
-}
-
-.stack-container{
+  }
+  
+  .stack-container {
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -25,28 +24,32 @@
     margin: auto;
     column-gap: 4rem;
     row-gap: 4rem;
-}
-
-
-@media screen and (min-width: 600px) {
-    .stack-container{
-        width: 100%;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .stack-container {
+      width: 100%;
     }
-}
-
-.tools-img{
+  }
+  
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .tools-img {
     width: 120px;
     height: auto;
-    
-}
-
-.tools-img-teams{
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+  
+  .tools-img-teams {
     width: 120px;
     height: auto;
-}
-
-/* .tools-img-slack{
-    width: 160px;
-    height: auto;
-    margin-bottom: 190px !important;
-} */
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+  
