@@ -26,7 +26,7 @@ function ContactMe() {
               <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#25D366", fontSize: '3rem' }} />
             </div>
             <a href="https://wa.me/07043560704" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
-              Message me on WhatsApp <img src={arrow} alt="arrow icon" />
+              Let's on WhatsApp <img src={arrow} alt="arrow icon" />
             </a>
           </div>
 
