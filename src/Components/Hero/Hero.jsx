@@ -113,7 +113,7 @@ function Hero() {
        </div>
 
        <p className="hero-intro">
-       Shaping Visions into Market-Leading Products, I Craft Strategy and Deliver Results.Let's Innovate and Achieve Build Solutions!"
+       Shaping Visions into Market-Leading Products, I Develop Strategies and Deliver Results.Let me transform your ideas into Solutions!
        </p>
 
        <div className="hero-ctas">
