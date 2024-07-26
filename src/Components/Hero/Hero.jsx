@@ -110,6 +110,7 @@ function Hero() {
        <div className="hero-heading">
         <h1>PROJECT / PRODUCT MANAGER &</h1>
         <h1>DATA ANALYST</h1>
+      
        </div>
 
        <p className="hero-intro">
