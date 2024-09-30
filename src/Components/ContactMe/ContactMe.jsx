@@ -43,6 +43,7 @@ function ContactMe() {
         <p className="attr">
           Nnachi Joy Chima
         </p>
+        
       </div>
     </section>
   );

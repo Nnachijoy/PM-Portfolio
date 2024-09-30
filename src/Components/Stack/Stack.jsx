@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from 'react';
 import jiraa from "../../assets/icons/jiraa.png";
 import teamss from "../../assets/icons/teamss.png";
 import slackk from "../../assets/icons/slackk.png";

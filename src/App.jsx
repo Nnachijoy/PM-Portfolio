@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import AboutMe from "./Components/AboutMe/AboutMe.jsx"
 import ContactMe from "./Components/ContactMe/ContactMe.jsx"
 import Hero from "./Components/Hero/Hero.jsx"
@@ -16,8 +18,8 @@ function App() {
     <Hero />
     <Stack />
     <Projects />
-    <AboutMe />
     <Skills />
+    <AboutMe />
     <Journey />
     <ContactMe />
     </main>

@@ -3,19 +3,19 @@ import SingleProject from "../SingleProject/SingleProject";
 import "./Projects.css";
 
 // images 
-import boilerplate from "../../assets/images/remindr/boilerplate.jpeg";
-import projectone from "../../assets/images/remindr/projectone.png";
-import successoverview from "../../assets/images/remindr/successoverview.png";
+import aihomework from "../../assets/images/remindr/aihomework.png";
+import homeworktwo from "../../assets/images/remindr/homeworktwo.png";
+import homeworkthree from "../../assets/images/remindr/homeworkthree.png";
 
 //bulk downloader
-import frd from "../../assets/images/bulk/frd.png";
-import frdface from "../../assets/images/bulk/frdface.png";
-import frdauth from "../../assets/images/bulk/frdauth.png";
+import tifione from "../../assets/images/bulk/tifione.png";
+import tifitwo from "../../assets/images/bulk/tifitwo.png";
+import tifithree from "../../assets/images/bulk/tifithree.png";
 
 //mathivities
-import ticket from "../../assets/images/mathivities/ticket.png";
-import linearticket from "../../assets/images/mathivities/linearticket.png";
-import gitticket from "../../assets/images/mathivities/gitticket.png";
+import forkone from "../../assets/images/mathivities/forkone.png";
+import forktwo from "../../assets/images/mathivities/forktwo.png";
+import forkthree from "../../assets/images/mathivities/forkthree.png";
 
 //weather
 import marketintelligence from "../../assets/images/weather/marketintelligence.jpg";
@@ -27,31 +27,39 @@ import arrow from "../../assets/icons/view-more-arrow.svg";
 function Projects() {
   const [projects, setProjects] = useState([
     {
-      name: "Python BOILERPLATE",
-      description: `I enlisted the functionalities, requirements, acceptance criteria, dependencies, risk and mitigation, objectives, and scope.
+      name: "AI FOR HOMEWORK",
+      description: `As the Product Manager for Homework AI, I guided the development of a 
+      homework help app that includes parental controls and teacher-assigned tasks. I outlined key 
+      features and requirements, working closely with developers to make sure everything was delivered smoothly.
+       By staying on top of potential issues and managing priorities, I helped improve the development process by 30%,
+        ensuring the app was easy to use for both parents and students.`,
 
-The Python Boilerplate guides the development of reusable and efficient Python project templates. It outlines key components, functionalities, and standards to ensure consistency and ease of use for developers.`,
       stack: ["ReactJS", "CSS", "Invision Studio"],
-      images: [boilerplate, projectone, successoverview],
-      links: ["https://docs.google.com/document/d/1pH3NU6yZyQjqkWoHLUIGmeThadHMMV659EBsYY357QE/edit"]
+      images: [aihomework, homeworktwo, homeworkthree],
+      links: ["https://aiforhomework.com/"]
     },
     {
-      name: "Functional Requirement Document",
-      description: `I enlisted the feature name, epic, user story, parameters, and acceptance criteria.
-
-The FRD details the essential features and functionalities needed for the project. It outlines specific requirements and standards to ensure consistency, quality, and usability. The document defines key components, expected behaviors, and best practices, facilitating a clear and effective development process.`,
+      name: "CONVEY",
+      description: `In my role leading the development of Tifi.tv, an AI app that converts text into videos and summarizes YouTube
+       and podcast content, I oversaw the success of the development process. I identified key user needs and translated them into clear,
+        actionable features, ensuring the app was intuitive and impactful. Collaborating with developers, I prioritized tasks and
+         kept the project on track for a timely launch. I also conducted market research to refine the product strategy, which resulted 
+         in a 50% boost in user engagement after launch.`,
       stack: ["ReactJS", "CSS", "Invision Studio"],
-      images: [frd, frdauth, frdface],
-      links: ["https://docs.google.com/document/d/1G5lm-I7QiTHdeLFzJr47oAPXK703wN7VLUePYxeg1rI/edit"]
+      images: [tifitwo, tifithree, tifione],
+      links: ["https://tifi.tv/"]
     },
     {
-      name: "GitHub Ticket",
-      description: `I created a ticket, including description, purpose, user story, requirements, expected outcome, acceptance criteria.
-
-The ticket serves as a communication tool for the development team, enabling collaboration, discussion of solutions, and monitoring of progress. It includes fields like title, description, labels (e.g., bug, enhancement, documentation), assignees, and milestones to help organize and prioritize work efficiently, ensuring the AI video generator project stays on track and meets its goals.`,
+      name: "FORKHIVE",
+      description: `At Forkhive, I managed the development of a website that offers services like website maintenance,
+       frontend development, and AI/ML consultation. I worked with the team to make sure the website was easy to use and 
+       kept clients happy, boosting satisfaction by 25%. I also helped launch new designs that
+        improved user engagement by 20%. On top of that,
+        I oversaw our AI and data science services, helping clients use these tools to make smarter decisions. 
+        By staying organized and keeping communication clear, I ensured smooth project delivery and support.`,
       stack: ["ReactJS", "CSS", "Invision Studio"],
-      images: [ticket, gitticket, linearticket],
-      links: ["https://linear.app/ai-video-and-thumbnail-generator/issue/BAC-31/endpoints-for-the-about-page-values-settable-from-admin-panel"]
+      images: [forkone, forktwo, forkthree],
+      links: ["https://www.forkhive.com/"],
     },
     {
       name: "Market Intelligence Report",

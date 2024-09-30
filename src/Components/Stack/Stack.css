@@ -1,55 +1,72 @@
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .stack {
-    background-color: var(--techStackBgColor);
-    padding: 4rem 0;
-  }
-  
-  .stack-inner {
-    width: 90vw;
-    max-width: var(--laptop);
-    margin: auto;
-  }
-  
-  .stack-inner > h1 {
-    font-family: clashGrotesk;
-    font-size: 2rem;
-    margin: 0 0 2rem 0;
-  }
-  
+  background-color: var(--techStackBgColor);
+  padding: 4rem 0;
+  overflow: hidden; /* Ensure images don't overflow the container */
+}
+
+.stack-inner {
+  width: 90vw;
+  max-width: var(--laptop);
+  margin: auto;
+}
+
+.stack-inner > h1 {
+  font-family: clashGrotesk;
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+}
+
+.stack-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: nowrap; /* Prevent wrapping on mobile */
+  gap: 2rem; /* Adjust spacing between images */
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical overflow */
+  -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar in Firefox */
+  position: relative; /* Needed for animation positioning */
+}
+
+.stack-container::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.tools-img {
+  width: 130px;
+  height: auto;
+  flex-shrink: 0; /* Prevent images from shrinking */
+  animation: move 5s linear infinite; /* Apply animation */
+}
+
+.tools-img-teams {
+  width: 130px;
+  height: auto;
+  animation: move 5s linear infinite; /* Apply animation */
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
   .stack-container {
-    display: flex;
-    align-items: start;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80vw;
-    margin: auto;
-    column-gap: 4rem;
-    row-gap: 4rem;
+    flex-wrap: wrap; /* Revert to wrapping on larger screens */
   }
-  
-  @media screen and (min-width: 600px) {
-    .stack-container {
-      width: 100%;
-    }
-  }
-  
-  @keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-  
-  .tools-img {
-    width: 120px;
-    height: auto;
-    animation: moveUpDown 2s ease-in-out infinite;
-  }
-  
-  .tools-img-teams {
-    width: 120px;
-    height: auto;
-    animation: moveUpDown 2s ease-in-out infinite;
-  }
-  
+}
